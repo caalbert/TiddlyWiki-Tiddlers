@@ -1,0 +1,8 @@
+!!!Audible Library. (<$count filter="[tag[book]field:book-location[audible]sort[book-series]]">
+</$count>)
+
+<$list filter="[tag[book]field:book-location[audible]sort[book-series]]">
+
+<$link to={{!!title}}><$view field="title"/> </$link>|| //<$view field="to-read"/>//
+
+</$list>
