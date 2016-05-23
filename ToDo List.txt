@@ -1,0 +1,12 @@
+!!![[Completed Tasks|Done Tasks]] (<$count filter="[has[due]tag[done]!sort[due]]">
+</$count>)
+
+!! Due (<$count filter="[has[due]!tag[done]sort[due]]">
+</$count>)
+
+<$list filter="[has[due]!tag[done]sort[due]]">
+
+<$checkbox tag="done">  ''<$view field="due"/>'' || <$link to={{!!title}}><$view field="title"/> </$link> || //<$view field="tags"/>//
+</$checkbox>
+
+</$list>
