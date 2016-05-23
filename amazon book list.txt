@@ -1,0 +1,8 @@
+!!!Amazon Kindle Library. (<$count filter="[tag[book]field:book-location[amazon]sort[book-series]]">
+</$count>)
+
+<$list filter="[tag[book]field:book-location[amazon]sort[book-series]]">
+
+<$link to={{!!title}}><$view field="title"/> </$link>|| //<$view field="to-read"/>//
+
+</$list>
