@@ -1,0 +1,8 @@
+!!!My Book Library. (<$count filter="[tag[book]has[to-read]sort[book]]">
+</$count>)
+
+<$list filter="[tag[book]has[to-read]sort[book]]">
+
+<$link to={{!!title}}><$view field="title"/> </$link>|| <$view field="tags"/>
+
+</$list>
